@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -66,11 +67,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "e-wallet-web-app:build"
+            "browserTarget": "e-wallet-web-app:build",
+            "port": 3600
           },
           "configurations": {
             "production": {
-              "browserTarget": "e-wallet-web-app:build:production"
+              "browserTarget": "e-wallet-web-app:build:production",
+              "port": 3601
             }
           }
         },
@@ -92,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "e-wallet-web-app"
+    }
+  },
+  "defaultProject": "e-wallet-web-app",
+  "cli": {
+    "analytics": "4e027754-d004-4261-8ec6-7996dadbb786"
+  }
 }
