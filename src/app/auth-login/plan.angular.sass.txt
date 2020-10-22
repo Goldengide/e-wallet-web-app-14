@@ -1,0 +1,12 @@
+Components for UI
+header/main/footer
+in hEader we can have logo and navbar
+main, -form, and all other stuffs
+footer - submit, actions and toolbar button
+footer should contain links or login button
+
+
+How can I build a different
+
+Layout issues
+how to set the layout things up

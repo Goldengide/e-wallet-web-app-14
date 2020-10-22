@@ -1,16 +1,38 @@
-.content {
-  padding: 16px;
+.spacer {
+  flex: 1 1 auto;
+}
+main {
+  // width: 200px;
+  // height: 400px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  // z-index: 1030;
 }
 
-.content > mat-card {
-  width: 200px;
+mat-grid-list {
+  margin: 2em;
 }
-mat-toolbar {
-  justify-content: space-between;
+
+.grid-tile {
+  border-radius: 0.2em;
+  background-color: black;
+  color: white;
+  font-size: large;
 }
-.content {
-  padding: 16px;
+
+
+
+@media screen and (min-width: 60em) {
+  .hidden-md {
+    display: none;
+  }
 }
-.content > mat-card {
-  margin-bottom: 16px;
+@media screen and (max-width: 60em) {
+  .hidden-sm {
+    display: none;
+  }
 }

@@ -13,13 +13,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { CardPlayComponent } from './card-play/card-play.component';
+import { AuthLoginComponent } from './auth-login/auth-login.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { MatListModule } from "@angular/material/list";
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    CardPlayComponent
+    AuthLoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -32,9 +38,15 @@ import { CardPlayComponent } from './card-play/card-play.component';
     MatButtonModule,
     LayoutModule,
     MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatListModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [{provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {floatLabel: 'always'}}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

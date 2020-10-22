@@ -1,0 +1,29 @@
+
+// .mat-toolbar, .mat-card, .mat-card-content, .mat-card-actions {
+//   background-color: transparent;
+// }
+.my-form{
+  width: 100%;
+}
+.authentication {
+  width: 100%;
+  min-width: 60em;
+  max-width: 60em;
+  margin: auto;
+}
+.full-width {
+  width: 100%;
+}
+mat-card {
+  border: none;
+  border-radius: 0;
+  width: 90%;
+  margin: auto;
+  box-shadow: none;
+}
+.my-card {
+  width: 60%;
+  padding: 10%;
+  margin-left:10%;
+  margin-right:10%;
+}
