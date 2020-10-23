@@ -9,7 +9,17 @@
   right: 15px;
   bottom: 15px;
 }
-
+.dashboard-area {
+  background-color: #eee;
+  overflow-y: scroll;
+}
+.dashboard-area span {
+  font-size: small;
+}
+mat-list {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .more-button {
   position: absolute;
   top: 5px;
@@ -18,4 +28,7 @@
 
 .dashboard-card-content {
   text-align: center;
+}
+mat-grid-tile {
+  color: black
 }

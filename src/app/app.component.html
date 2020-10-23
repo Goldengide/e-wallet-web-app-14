@@ -1,46 +1,76 @@
-<header>
-  <mat-toolbar color="primary">
-    <mat-toolbar-row>
+<div>
+  <header>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
 
-      <!--  <span>HOME</span> -->
-       <span><a href="/">HOME {{ screenWidth}}</a></span>
-       <span class="spacer"></span>
-       <a mat-button routerLink="/register" class="hidden-sm">Register</a>
-       <a mat-button routerLink="/login" class="hidden-sm">Login</a>
+        <!--  <span>HOME</span> -->
+         <span><a href="/">HOME</a></span>
+         <span class="spacer"></span>
+         <a mat-button routerLink="/register" class="hidden-sm">Register</a>
+         <a mat-button routerLink="/login" class="hidden-sm">Login</a>
 
-       <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="hidden-md">
-        <mat-icon>more_vert</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-          <mat-icon>dialpad</mat-icon>
-          <span>Redial</span>
+         <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="hidden-md">
+          <mat-icon>more_vert</mat-icon>
         </button>
-        <button mat-menu-item disabled>
-          <mat-icon>voicemail</mat-icon>
-          <span>Check voice mail</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>notifications_off</mat-icon>
-          <span>Disable alerts</span>
-        </button>
-      </mat-menu>
-    </mat-toolbar-row>
-  </mat-toolbar>
-</header>
-<main>
-  <router-outlet></router-outlet>
-</main>
-<footer class="hidden-md">
-  <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile class="grid-tile"><a routerLink="/login">Login</a></mat-grid-tile>
-    <mat-grid-tile></mat-grid-tile>
-    <mat-grid-tile class="grid-tile"><a routerLink="/register">Register</a></mat-grid-tile>
-  </mat-grid-list>
-  <mat-grid-list cols="4" rowHeight="2:1" fxLayoutGap = '50px'>
-    <mat-grid-tile class="grid-tile"><a routerLink="/login">Login</a></mat-grid-tile>
-    <mat-grid-tile class="grid-tile">1</mat-grid-tile>
-    <mat-grid-tile class="grid-tile">2</mat-grid-tile>
-    <mat-grid-tile class="grid-tile"><a routerLink="/register">Register</a></mat-grid-tile>
-  </mat-grid-list>
-</footer>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+        </mat-menu>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <footer class="hidden-md">
+    <!-- <mat-grid-list cols="3" rowHeight="2:1">
+      <mat-grid-tile class="grid-tile"><a routerLink="/login">Login</a></mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile class="grid-tile"><a routerLink="/register">Register</a></mat-grid-tile>
+    </mat-grid-list> -->
+    <mat-grid-list cols="4" rowHeight="1:1" gutterSize = "0.1em">
+      <mat-grid-tile class="grid-tile-menu">
+        <a routerLink="/" class="active">
+          <div fxLayout = "column" fxLayoutAlign = "flex-end center">
+          <mat-icon>apps</mat-icon>
+          <span>Menu</span>
+          </div>
+        </a>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile-menu">
+        <a routerLink="/login">
+          <div fxLayout = "column" fxLayoutAlign = "flex-end center">
+          <mat-icon>account_balance</mat-icon>
+          <span>Wallet</span>
+          </div>
+        </a>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile-menu">
+        <a routerLink="/login">
+          <div fxLayout = "column" fxLayoutAlign = "flex-end center">
+          <mat-icon>notifications</mat-icon>
+          <span>Notification</span>
+          </div>
+        </a>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile-menu">
+        <a routerLink="/login">
+          <div fxLayout = "column" fxLayoutAlign = "flex-end center">
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+          </div>
+        </a>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </footer>
+</div>

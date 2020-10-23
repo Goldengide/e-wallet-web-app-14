@@ -19,13 +19,15 @@ import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/mat
 import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { RegisterComponent } from './register/register.component';
+import { NavigationComponent } from './dashboard/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     AuthLoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

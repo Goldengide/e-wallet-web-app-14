@@ -10,20 +10,37 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  // z-index: 1030;
+  margin:0;
+  padding:0;
+  // // z-index: 1030;
 }
 
-mat-grid-list {
-  margin: 2em;
+footer mat-grid-list {
+  margin: 0;
+  padding:0;
 }
 
-.grid-tile {
+.grid-tile-auth {
   border-radius: 0.2em;
   background-color: black;
   color: white;
   font-size: large;
 }
 
+.grid-tile-menu {
+  border-radius: 0em;
+  background-color: transparent;
+  color: #666;
+  font-size: small;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+.active {
+  color: #000
+}
 
 
 @media screen and (min-width: 60em) {
